@@ -1,0 +1,5 @@
+package com.qas.web.domains;
+
+public class AccountController {
+
+}

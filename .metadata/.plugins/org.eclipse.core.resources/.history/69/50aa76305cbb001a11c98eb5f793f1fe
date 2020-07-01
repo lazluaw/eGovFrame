@@ -1,0 +1,16 @@
+package com.test.web.tx;
+
+import org.apache.ibatis.annotations.Insert;
+import org.springframework.stereotype.Repository;
+
+import com.test.web.domains.User;
+
+@Repository
+//여기에 트랜잭션을 걸지 않는 이유??
+public interface TxMapper {
+	//UserMapper 내용 옮김
+	@Insert("insert into user (userId, userPassword) "
+	+ "values  #{userId}, #{userPassword}") //mybatis 쿼리문을 mapper.xml이 아닌 여기에 쳐서 속도를 향상시키는 것
+	public void insertUser(User user);
+
+}

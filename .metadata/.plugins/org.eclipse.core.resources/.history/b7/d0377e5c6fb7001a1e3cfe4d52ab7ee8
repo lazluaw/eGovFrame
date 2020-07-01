@@ -1,0 +1,5 @@
+package com.qas.web.services;
+
+public class BoardMapper {
+
+}

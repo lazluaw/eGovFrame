@@ -1,0 +1,5 @@
+package com.test.web.services;
+
+public interface UserService {
+
+}

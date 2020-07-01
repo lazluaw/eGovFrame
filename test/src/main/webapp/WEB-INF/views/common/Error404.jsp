@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ERROR 404</title>
+<style>
+body {
+	text-align: center;
+}
+</style>
+</head>
+<body>
+	<img
+		src="https://cdn.pixabay.com/photo/2016/04/24/22/30/monitor-1350918_1280.png">
+	<h1>죄송합니다. 현재 찾을 수 없는 페이지를 요청하셨습니다.</h1>
+	<p>존재하지 않는 주소를 입력하셨거나,</p>
+	<br>
+	<p>요청하신 페이지와 주소가 변경, 삭제되어 찾을 수 없습니다.</p>
+	<br>
+	<p>궁금한 점이 있으시면 언제든지 고객센터를 통해 문의해 주시기 바랍니다.</p>
+	<br></br>
+	<p>감사합니다.</p>
+	<button type="submit" class="main_btn">메인으로</button>
+</body>
+<script>
+	$('.main_btn').click(function(e) {
+		e.preventDefault()
+		localtion.href = '${context}/main/Home'
+	})
+</script>
+</html>

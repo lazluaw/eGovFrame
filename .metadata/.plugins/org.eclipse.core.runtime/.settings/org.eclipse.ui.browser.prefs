@@ -1,0 +1,4 @@
+browser-choice=0
+browsers=<?xml version\="1.0" encoding\="UTF-8"?>\n<web-browsers current\="1">\n<system/>\n<external location\="/Applications/Google Chrome.app" name\="chrome"/>\n</web-browsers>
+eclipse.preferences.version=1
+internalWebBrowserHistory=http\://localhost\:8110/web/location/users/Login|*|http\://localhost\:8110/web/location/users/Join|*|http\://localhost\:8110/web/|*|http\://localhost\:8110/web/\#|*|http\://localhost\:8110/web/users/join|*|http\://localhost\:8110/users/join|*|http\://localhost\:8110/web/join|*|http\://localhost\:8070/web/|*|http\://localhost\:8090/web/|*|https\://www.eclipse.org/setups/donate/?scope\=Eclipse%20IDE%20for%20Enterprise%20Java%20Developers%20(includes%20Incubating%20components)&version\=4.16.0.20200615-1200&campaign\=2020-06|*|

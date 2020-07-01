@@ -1,0 +1,5 @@
+package com.test.web.domains;
+
+public class Board {
+
+}

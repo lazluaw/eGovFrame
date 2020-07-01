@@ -1,0 +1,7 @@
+package com.qas.web.controllers;
+
+@Controller
+@RequestMapping("/users")
+public class UserController {
+
+}

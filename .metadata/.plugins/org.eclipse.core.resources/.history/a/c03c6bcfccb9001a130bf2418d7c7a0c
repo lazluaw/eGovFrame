@@ -1,0 +1,5 @@
+package com.test.web.mappers;
+
+public interface BoardMapper {
+
+}

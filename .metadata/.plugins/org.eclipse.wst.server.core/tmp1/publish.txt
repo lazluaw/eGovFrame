@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Wed Jul 01 16:00:48 KST 2020
+org.eclipse.jst.jee.server\:test=/usr/local/Cellar/tomcat/9.0.36/libexec/wtpwebapps/test
+org.eclipse.jst.jee.server\:/binary\:/Users/ny/.m2/repository/org/springframework/spring-web/4.3.0.RELEASE/spring-web-4.3.0.RELEASE.jar=/usr/local/Cellar/tomcat/9.0.36/libexec/wtpwebapps/test/WEB-INF/lib/spring-web-4.3.0.RELEASE.jar

@@ -1,0 +1,48 @@
+var user = user || {}
+user = (function(){
+	let _, javascript, session
+	let init = function(){ //자바 new와 같음
+		 _ = sessionStorage.getItem('context'),
+		 javascript = sessionStorage.getItem('javascript'),
+		 session = sessionStorage.getItem('session')
+	}
+	let join = function(){
+		$.ajax({
+			url : _+`/person/users`,
+			type: 'POST',
+			data: $("#joinForm").serialize(),
+			dataType: 'json',
+			contentType: 'application/json; charset=UTF-8',
+			success: function(res){
+				alert("회원가입 성공")
+				location.href = _+'/location/users/login' //tiles가 아니니까 바로 갈 수 있음
+			},
+			error: function(request,status,error){
+				alert("code = "+ request.status + " message = " + request.responseText + " error = " + error)
+			}
+		})
+	}
+	let login = function(loginObj){
+		$.ajax({
+			url: `/users/${loginOb.userId}`,
+			type: 'POST',
+			data: $('loginForm').serialize(),
+			dataType: 'json',
+			contentType: 'application/json; charset=UTF-8',
+			success: function(res){
+				alert('로그인 성공')
+			},
+			error: function(request,status,error){
+				alert("code = "+ request.status + " message = " + request.responseText + " error = " + error)
+			}
+		})
+	}
+	let logout = function(){
+		sessionStroage.removeItem('userid')
+		sessionStroage.removeItem('ctx')
+		sessionStroage.removeItem('js')
+		sessionStroage.removeItem('css')
+		sessionStroage.removeItem('img')
+	}
+	return {init, join, login, logout}
+})()

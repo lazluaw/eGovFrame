@@ -1,0 +1,10 @@
+"use strict"
+var app = app || {}
+app = (()=>{
+	return {init}
+})();
+function init(x) { // 표현
+	$.getScript(x+'/resources/js/session.js', () => {
+		$.extend(new Session(x)) // 선언
+	})
+}

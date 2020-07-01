@@ -1,0 +1,26 @@
+package com.test.web.domains;
+
+import java.sql.Timestamp;
+
+import org.springframework.context.annotation.Lazy;
+import org.springframework.stereotype.Component;
+
+import lombok.Data;
+
+@Component @Lazy
+@Data
+public class User {
+	private Integer userIdx;
+	private String userId;
+	private String userPassword;
+	private String userEmail;
+	private Timestamp insertDate;
+	private Timestamp updateDate;
+	@Override
+	public String toString() {
+		return "User [userIdx=" + this.userIdx + ", userId=" + this.userId + ", userPassword=" + this.userPassword + ", userEmail="
+				+ this.userEmail + ", insertDate=" + this.insertDate + ", updateDate=" + this.updateDate + "]";
+	}
+
+	
+}
